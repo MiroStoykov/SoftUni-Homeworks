@@ -1,8 +1,21 @@
-function nextDay(year, month, day) {
+function nextDay(year1, month1, day1) {
+
+
+    let year = year1;
+    let day = day1;
+    let month = month1;
+
+
+
+    if (year == 1) {
+        year = 1901;
+    }
 
     let dateAsStr = year + `-` + month + `-` + day;
 
+
     let date = new Date(dateAsStr);
+
 
     date.setDate(date.getDate() + 1);
 
@@ -20,4 +33,4 @@ function nextDay(year, month, day) {
     console.log(formatDate(date));
 }
 
-nextDay(2016, 9, 30)
+nextDay(1, 1, 1)

@@ -12,15 +12,24 @@
 [2, 4, 3, 5].findIndex((n) => n % 2 !== 0); // 2
 [3, 4, 8, 6].map((n) => n * 2); // [6, 8, 16, 12] izvarshva operaciq na vsichki elementi na masiva(for cikal)
 [1, 4, 7, 8].filter((n) => n % 2 === 0); // [4, 8]
-[2, 4, 3, 7].reduce((acc, cur) => acc + cur); // 16
+[2, 4, 3, 7].reduce((total, cur) => total + cur); // 16
 [2, 3, 4, 5].every((x) => x < 6); // true
 [3, 5, 6, 8].some((n) => n > 6); // true
 [1, 2, 3, 4].reverse(); // [4, 3, 2, 1]
 [3, 5, 7, 8].at(-2);
-[3, 5, 7, 8].sort((a, b) => a - b);
+let a = [3, 5, 7, 8].sort((a, b) => a - b);  // sortirane po pove4e ot edin pokazatel s operatora or || 
 
-localCompare() //sortirane po azbuchen red
-fromCharCode() //nomer to ascii cod simvol
-charCodeAt()   //char to ascii cod nomer na poziciq
+// localeCompare() //sortirane po azbuchen red
+// String.fromCharCode() //nomer to ascii cod simvol
+// charCodeAt()   //char to ascii cod nomer na poziciq
+// hasOwnProperty ili in //proverka za kluch v obekt
+//...    //spread operator - razbiva masiva 
+
+let str = `fdasdas`;
+str.substring()
+str.replace()
+str.includes()
+
+//regex methods  match,exec
 
 

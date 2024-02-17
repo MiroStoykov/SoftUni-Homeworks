@@ -8,19 +8,24 @@
 
 #box1 {
   background-color: pink;
+  order: 2;
 }
 
 #box2 {
   background-color: lightgreen;
+  order: 0;
 }
 
 #box3 {
   background-color: lightblue;
+  order: 1;
 }
 
-.flex-container > div {
+.flex-container>div {
   background-color: #f1f1f1;
   margin: 10px;
   padding: 20px;
   font-size: 30px;
 }
+
+/* Use order to solve the problem: § Box One – 2 § Box Two – 0 § Box Three – 1 */
